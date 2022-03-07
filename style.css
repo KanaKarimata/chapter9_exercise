@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 header {
   width: 100%;
   height: 50px;
@@ -6,7 +12,6 @@ header {
 
 .main-content {
   display: flex;
-  justify-content: center;
   margin: 50px auto;
   width: 960px;
 }
@@ -15,31 +20,44 @@ header {
   width: 300px;
   background-color: #EEEEEE;
   margin-right: 30px;
+  position: relative;
+}
+
+.main-content-item:last-child {
+  margin-left: 0;
 }
 
 span {
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: #FF9A4B;
   color: white;
 }
 
-.main-content-image {
-  width: 280px;
+.main-content-image1 {
   height: 150px;
   background-image: url(img/flow01.png);
-  padding: 10px;
   background-size: cover;
+  background-position: bottom;
 }
 
-.main-content-image:nth-child(2) {
+.main-content-image2 {
+  height: 150px;
   background-image: url(img/flow02.png);
+  background-size: cover;
+  background-position: bottom;
 }
 
-.main-content-image:nth-child(3) {
+.main-content-image3 {
+  height: 150px;
   background-image: url(img/flow03.png);
+  background-size: cover;
+  background-position: bottom;
 }
 
 h3 {
-  padding-top: 15px;
+  margin: 15px 0 5px;
 }
 
 .main-content-text {
